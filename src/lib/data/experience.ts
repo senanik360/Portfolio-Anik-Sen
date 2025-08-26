@@ -51,7 +51,7 @@ export const experiences: Experience[] = [
     title: "Cloud Computing Trainee",
     company: "Tech Company",
     location: "Bangladesh",
-    duration: "2021 - 2022",
+    duration: "2023 - 2024",
     current: false,
     description: [
       "Learned cloud computing technologies and deployment strategies",
@@ -64,7 +64,7 @@ export const experiences: Experience[] = [
     title: "QA Functional Testing Intern",
     company: "Software Company",
     location: "Bangladesh",
-    duration: "2020 - 2021",
+    duration: "2022 - 2023",
     current: false,
     description: [
       "Performed functional testing of software applications using Selenium",

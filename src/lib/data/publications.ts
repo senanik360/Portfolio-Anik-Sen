@@ -9,15 +9,15 @@ export const publications: Publication[] = [
     venue: "IEEE Access",
     year: 2024,
     url: "https://ieeexplore.ieee.org/document/11104099",
-    status: "Published",
-    indexing: ["IEEE Xplore", "Scopus", "Web of Science"],
+    status: "Published & available in IEEE Xplore",
+    indexing: ["Scopus", "Web of Science"],
     impact: "Impact Factor: 3.9"
   },
   {
     id: "J.2",
     type: "journal",
     title: "Preventing Student's Mental Health Problems with the Help of Data Mining",
-    venue: "Computing",
+    venue: "International Journal of Computing",
     year: 2024,
     url: "https://www.computingonline.net/computing/article/view/3441",
     status: "Published",
@@ -52,8 +52,8 @@ export const publications: Publication[] = [
     venue: "IEEE International Conference",
     year: 2024,
     url: "https://ieeexplore.ieee.org/document/11100376",
-    status: "Published",
-    indexing: ["IEEE Xplore", "Scopus"]
+    status: "Published & available in IEEE Xplore",
+    indexing: ["Scopus"]
   },
   {
     id: "C.2",
@@ -62,8 +62,8 @@ export const publications: Publication[] = [
     venue: "IEEE International Conference",
     year: 2024,
     url: "https://ieeexplore.ieee.org/document/10948235",
-    status: "Published",
-    indexing: ["IEEE Xplore", "Scopus"]
+    status: "Published & available in IEEE Xplore",
+    indexing: ["Scopus"]
   },
   {
     id: "C.3",
@@ -72,8 +72,8 @@ export const publications: Publication[] = [
     venue: "IEEE International Conference",
     year: 2024,
     url: "https://ieeexplore.ieee.org/abstract/document/10434296",
-    status: "Published",
-    indexing: ["IEEE Xplore", "Scopus"]
+    status: "Published & available in IEEE Xplore",
+    indexing: ["Scopus"]
   },
   {
     id: "C.4",
@@ -82,8 +82,8 @@ export const publications: Publication[] = [
     venue: "IEEE International Conference",
     year: 2024,
     url: "https://ieeexplore.ieee.org/document/11088186",
-    status: "Published",
-    indexing: ["IEEE Xplore", "Scopus"]
+    status: "Published & available in IEEE Xplore",
+    indexing: ["Scopus"]
   },
 
   // Under Publication
@@ -94,7 +94,7 @@ export const publications: Publication[] = [
     venue: "5th International Conference on Mathematics, Engineering & Industrial Applications (ICoMEIA)",
     year: 2024,
     status: "Under Publication",
-    indexing: ["Target: Scopus"]
+    indexing: ["Scopus, WoS"]
   },
   {
     id: "U.2",
@@ -103,7 +103,7 @@ export const publications: Publication[] = [
     venue: "5th International Conference on Mathematics, Engineering & Industrial Applications (ICoMEIA)",
     year: 2024,
     status: "Under Publication",
-    indexing: ["Target: Scopus"]
+    indexing: ["Scopus, WoS"]
   },
   {
     id: "U.3",
@@ -112,7 +112,7 @@ export const publications: Publication[] = [
     venue: "The 9th International Conference on Innovation in Artificial Intelligence (ICIAI 2025)",
     year: 2025,
     status: "Under Publication",
-    indexing: ["Target: Scopus"]
+    indexing: ["Scopus"]
   },
   {
     id: "U.4",
@@ -121,7 +121,7 @@ export const publications: Publication[] = [
     venue: "The 5th International Conference on Computer, Information Technology and Intelligent Computing (CITIC 2025)",
     year: 2025,
     status: "Under Publication",
-    indexing: ["Target: Scopus"]
+    indexing: ["Scopus"]
   },
   {
     id: "U.5",
@@ -130,6 +130,6 @@ export const publications: Publication[] = [
     venue: "The 5th International Conference on Computer, Information Technology and Intelligent Computing (CITIC 2025)",
     year: 2025,
     status: "Under Publication",
-    indexing: ["Target: Scopus"]
+    indexing: ["Scopus"]
   }
 ];
