@@ -140,7 +140,7 @@ export const activities: Activity[] = [
     id: "16",
     title: "Cisco IT Essentials",
     organization: "Cisco",
-    year: 2022,
+    year: 2020,
     type: "training",
     description: "Successfully achieved the student level credential by completing the IT Essentials course",
     certificate: "cisco-it-essentials-2022"

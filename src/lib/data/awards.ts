@@ -77,7 +77,7 @@ export const awards: Award[] = [
     id: "9",
     title: "Magna Cum Laude",
     organization: "American International University-Bangladesh",
-    year: 2023,
+    year: 2025,
     description: "Graduated with highest honors, achieving CGPA of 3.94/4.00",
     category: "academic",
     certificate: "magna-cum-laude-2023"
