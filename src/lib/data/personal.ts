@@ -11,8 +11,8 @@ export const personalInfo: PersonalInfo = {
   },
   location: "Malacca, 75450, Malaysia",
   socialLinks: {
-    linkedin: "https://linkedin.com/in/aniksen",
-    github: "https://github.com/aniksen",
+    linkedin: "https://www.linkedin.com/in/senanik360/",
+    github: "https://github.com/senanik360",
     googleScholar: "https://scholar.google.com/citations?user=aniksen"
   },
   about: "I am pursuing my Master of Computing (By Research) at Multimedia University, Melaka, Malaysia, with an expected completion in March 2026. I am working on an FRGS-funded research project as a Graduate Research Assistant. I completed my Bachelor of Science in Computer Science & Engineering, specializing in Software Engineering, at American International University-Bangladesh (AIUB). My research interest areas are Information Security, Machine Learning, Federated Learning, and Cryptography.",
