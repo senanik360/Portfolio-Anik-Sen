@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Users, Calendar, MapPin, ExternalLink, Award, BookOpen, Globe, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Users, Calendar, Award, BookOpen, Globe, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { activities } from '@/lib/data/activities';
 import { useState, useEffect } from 'react';
 

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowRight, Download, Mail } from 'lucide-react';
+import { ArrowRight, Mail } from 'lucide-react';
 import { personalInfo, heroStats, tagline } from '@/lib/data/personal';
 
 export default function Hero() {
@@ -32,7 +32,7 @@ export default function Hero() {
               className="space-y-4"
             >
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Hi, I'm{" "}
+                Hi, I&apos;m{" "}
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   {personalInfo.name}
                 </span>
@@ -59,22 +59,15 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="grid grid-cols-2 lg:grid-cols-4 gap-6"
             >
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">{heroStats.publications}+</div>
-                <div className="text-sm text-gray-600">Publications</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600">{heroStats.conferences}+</div>
-                <div className="text-sm text-gray-600">Conferences</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-pink-600">{heroStats.awards}+</div>
-                <div className="text-sm text-gray-600">Awards</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-600">{heroStats.gpa}</div>
-                <div className="text-sm text-gray-600">CGPA</div>
-              </div>
+              {heroStats.map((stat, index) => {
+                const colors = ['text-blue-600', 'text-purple-600', 'text-pink-600', 'text-green-600'];
+                return (
+                  <div key={stat.label} className="text-center">
+                    <div className={`text-3xl font-bold ${colors[index]}`}>{stat.value}</div>
+                    <div className="text-sm text-gray-600">{stat.label}</div>
+                  </div>
+                );
+              })}
             </motion.div>
 
             {/* CTA Buttons */}

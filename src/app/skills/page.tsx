@@ -93,12 +93,12 @@ export default function SkillsPage() {
               <h1 className="text-4xl md:text-5xl font-bold mb-4 relative z-10">
                 Technical Skills
               </h1>
-              
+
               {/* Neon Glow Effect */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-60 blur-sm animate-pulse"></div>
               </div>
-              
+
               {/* Floating Particles Under Title */}
               {isClient && (
                 <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-full h-8">
@@ -141,10 +141,10 @@ export default function SkillsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {skills.map((category, categoryIndex) => {
               const IconComponent = skillIcons[category.category as keyof typeof skillIcons] || Code;
-              
+
               return (
                 <motion.div
-                  key={category.id}
+                  key={category.category}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}

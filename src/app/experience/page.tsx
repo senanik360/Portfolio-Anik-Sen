@@ -6,7 +6,7 @@ import { experiences } from '@/lib/data/experience';
 import { useState, useEffect } from 'react';
 
 export default function ExperiencePage() {
-  const [windowDimensions, setWindowDimensions] = useState({ width: 1200, height: 800 });
+  const [, setWindowDimensions] = useState({ width: 1200, height: 800 });
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -95,12 +95,12 @@ export default function ExperiencePage() {
               <h1 className="text-4xl md:text-5xl font-bold mb-4 relative z-10">
                 Professional Experience
               </h1>
-              
+
               {/* Neon Glow Effect */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-60 blur-sm animate-pulse"></div>
               </div>
-              
+
               {/* Floating Particles Under Title */}
               {isClient && (
                 <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-full h-8">
@@ -155,9 +155,8 @@ export default function ExperiencePage() {
                   className="relative"
                 >
                   {/* Timeline Dot */}
-                  <div className={`absolute left-6 w-4 h-4 rounded-full border-4 border-white shadow-lg ${
-                    experience.current ? 'bg-green-500' : 'bg-blue-500'
-                  }`}>
+                  <div className={`absolute left-6 w-4 h-4 rounded-full border-4 border-white shadow-lg ${experience.current ? 'bg-green-500' : 'bg-blue-500'
+                    }`}>
                     {experience.current && (
                       <div className="absolute inset-0 bg-green-500 rounded-full animate-ping"></div>
                     )}

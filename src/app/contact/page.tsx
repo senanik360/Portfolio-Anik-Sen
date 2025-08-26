@@ -49,7 +49,7 @@ export default function ContactPage() {
               Get In Touch
             </h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              I'm always interested in discussing research opportunities, collaborations, and innovative projects. Feel free to reach out!
+              I&apos;m always interested in discussing research opportunities, collaborations, and innovative projects. Feel free to reach out!
             </p>
           </motion.div>
         </div>
@@ -71,7 +71,7 @@ export default function ContactPage() {
                   Contact Information
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  I'm currently based in Malaysia and always open to discussing research collaborations, academic opportunities, and innovative projects in Information Security and Machine Learning.
+                  I&apos;m currently based in Malaysia and always open to discussing research collaborations, academic opportunities, and innovative projects in Information Security and Machine Learning.
                 </p>
               </div>
 

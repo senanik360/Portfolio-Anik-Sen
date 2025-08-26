@@ -11,7 +11,7 @@ interface BreadcrumbItem {
 
 export function Breadcrumb() {
   const pathname = usePathname();
-  
+
   const generateBreadcrumbs = (): BreadcrumbItem[] => {
     const segments = pathname.split('/').filter(Boolean);
     const breadcrumbs: BreadcrumbItem[] = [
@@ -19,7 +19,7 @@ export function Breadcrumb() {
     ];
 
     let currentPath = '';
-    segments.forEach((segment, index) => {
+    segments.forEach((segment) => {
       currentPath += `/${segment}`;
       const label = segment.charAt(0).toUpperCase() + segment.slice(1);
       breadcrumbs.push({

@@ -49,10 +49,11 @@ export interface Publication {
   id: string;
   type: 'journal' | 'conference' | 'under-publication' | 'submitted';
   title: string;
-  authors: string;
+  authors?: string;
   venue: string;
   year: number;
   doi?: string;
+  url?: string;
   pages?: string;
   status: string;
   indexing: string[];
@@ -62,6 +63,7 @@ export interface Publication {
 
 // Skills
 export interface SkillCategory {
+  id?: string;
   category: string;
   skills: {
     name: string;

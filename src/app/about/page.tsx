@@ -7,7 +7,7 @@ import { education } from '@/lib/data/education';
 import { useState, useEffect } from 'react';
 
 export default function AboutPage() {
-  const [windowDimensions, setWindowDimensions] = useState({ width: 1200, height: 800 });
+  const [, setWindowDimensions] = useState({ width: 1200, height: 800 });
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -101,12 +101,12 @@ export default function AboutPage() {
               <h1 className="text-4xl md:text-5xl font-bold mb-4 relative z-10">
                 About {personalInfo.name}
               </h1>
-              
+
               {/* Neon Glow Effect */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-60 blur-sm animate-pulse"></div>
               </div>
-              
+
               {/* Floating Particles Under Name */}
               {isClient && (
                 <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-full h-8">
@@ -209,17 +209,17 @@ export default function AboutPage() {
                 {/* Contact Information */}
                 <div className="space-y-4 mb-8">
                   <h3 className="text-lg font-semibold text-gray-900 mb-4">Contact Information</h3>
-                  
+
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-blue-600" />
-                    <a 
+                    <a
                       href={`mailto:${personalInfo.email}`}
                       className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
                     >
                       {personalInfo.email}
                     </a>
                   </div>
-                  
+
                   <div className="space-y-2">
                     <div className="flex items-center space-x-3">
                       <Phone className="w-5 h-5 text-blue-600" />
@@ -236,7 +236,7 @@ export default function AboutPage() {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3">
                     <MapPin className="w-5 h-5 text-blue-600" />
                     <span className="text-gray-700">{personalInfo.location}</span>
@@ -323,7 +323,7 @@ export default function AboutPage() {
                     {edu.thesis && (
                       <div className="bg-blue-50 rounded-lg p-4">
                         <h5 className="font-semibold text-gray-900 mb-2">Research Focus</h5>
-                        <p className="text-gray-700 italic">"{edu.thesis}"</p>
+                        <p className="text-gray-700 italic">&quot;{edu.thesis}&quot;</p>
                       </div>
                     )}
                   </motion.div>

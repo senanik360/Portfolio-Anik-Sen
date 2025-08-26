@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Search, Filter, BookOpen, ExternalLink, Calendar, Users } from 'lucide-react';
+import { Search, BookOpen, ExternalLink, Calendar, Users } from 'lucide-react';
 import { publications } from '@/lib/data/publications';
 import { useState, useEffect, useMemo } from 'react';
 

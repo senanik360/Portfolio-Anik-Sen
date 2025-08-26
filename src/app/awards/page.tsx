@@ -80,7 +80,7 @@ function DeansListSlideshow({ images, onImageClick }: { images: string[], onImag
 
             {/* Image info overlay */}
             <div className="absolute bottom-0 left-0 right-0 p-3 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-gradient-to-t from-black/80 to-transparent">
-              <h4 className="font-semibold text-sm">Dean's List Honor</h4>
+              <h4 className="font-semibold text-sm">Dean&apos;s List Honor</h4>
               <p className="text-xs opacity-90">5 Consecutive Times Achievement - Image {currentSlide + 1} of {images.length}</p>
             </div>
 
@@ -417,33 +417,7 @@ export default function AwardsPage() {
                   </div>
                 )}
 
-                {/* High Achiever Research Scholarship Image */}
-                {award.title === "High Achiever Research Scholarship for Postgraduate Programs" && (
-                  <div className="mb-4">
-                    <div className="relative group">
-                      <div
-                        className="overflow-hidden rounded-lg shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105 cursor-pointer"
-                        onClick={() => openImageModal("/Emergin Leader Award 2024.jpg")}
-                      >
-                        <img
-                          src="/Emergin Leader Award 2024.jpg"
-                          alt="High Achiever Research Scholarship for Postgraduate Programs - Multimedia University, Malaysia"
-                          className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
-                          loading="lazy"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div className="absolute bottom-0 left-0 right-0 p-3 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                          <h4 className="font-semibold text-xs">Research Scholarship</h4>
-                          <p className="text-xs opacity-90">Full Scholarship for Outstanding Research Potential</p>
-                        </div>
-                        {/* Click indicator */}
-                        <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          Click to enlarge
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
+
 
 
               </motion.div>
@@ -615,7 +589,7 @@ export default function AwardsPage() {
                 </>
               ) : (
                 <>
-                  <h3 className="font-semibold text-lg">Dean's List Honor</h3>
+                  <h3 className="font-semibold text-lg">Dean&apos;s List Honor</h3>
                   <p className="text-sm opacity-90">
                     {currentImageIndex + 1} of {deansListImages.length} - 5 Consecutive Times Achievement
                   </p>

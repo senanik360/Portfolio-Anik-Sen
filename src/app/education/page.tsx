@@ -6,7 +6,7 @@ import { education } from '@/lib/data/education';
 import { useState, useEffect } from 'react';
 
 export default function EducationPage() {
-  const [windowDimensions, setWindowDimensions] = useState({ width: 1200, height: 800 });
+  const [, setWindowDimensions] = useState({ width: 1200, height: 800 });
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -95,12 +95,12 @@ export default function EducationPage() {
               <h1 className="text-4xl md:text-5xl font-bold mb-4 relative z-10">
                 Academic Journey
               </h1>
-              
+
               {/* Neon Glow Effect */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-60 blur-sm animate-pulse"></div>
               </div>
-              
+
               {/* Floating Particles Under Title */}
               {isClient && (
                 <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-full h-8">
@@ -156,9 +156,8 @@ export default function EducationPage() {
                     className="relative"
                   >
                     {/* Timeline Dot */}
-                    <div className={`absolute left-6 w-4 h-4 rounded-full border-4 border-white shadow-lg ${
-                      edu.current ? 'bg-green-500' : 'bg-blue-500'
-                    }`}>
+                    <div className={`absolute left-6 w-4 h-4 rounded-full border-4 border-white shadow-lg ${edu.current ? 'bg-green-500' : 'bg-blue-500'
+                      }`}>
                       {edu.current && (
                         <div className="absolute inset-0 bg-green-500 rounded-full animate-ping"></div>
                       )}
@@ -223,7 +222,7 @@ export default function EducationPage() {
                           </div>
                           <div className="bg-blue-50 rounded-lg p-4">
                             <p className="text-gray-700 italic">
-                              "{edu.thesis}"
+                              &quot;{edu.thesis}&quot;
                             </p>
                           </div>
                         </div>
@@ -338,7 +337,7 @@ export default function EducationPage() {
                 <BookOpen className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">5 Times</h3>
-              <p className="text-gray-600">Dean's List Honor</p>
+              <p className="text-gray-600">Dean&apos;s List Honor</p>
             </motion.div>
 
             <motion.div

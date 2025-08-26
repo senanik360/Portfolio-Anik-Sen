@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Download } from 'lucide-react';
 import { navigation } from '@/lib/data/navigation';
-import { personalInfo } from '@/lib/data/personal';
+
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);

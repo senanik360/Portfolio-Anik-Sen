@@ -9,7 +9,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 export default function HomePage() {
-  const [windowDimensions, setWindowDimensions] = useState({ width: 1200, height: 800 });
+  const [, setWindowDimensions] = useState({ width: 1200, height: 800 });
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
