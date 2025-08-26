@@ -256,7 +256,7 @@ export default function ExperiencePage() {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Building className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">6+</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">4+</h3>
               <p className="text-gray-600">Professional Roles</p>
             </motion.div>
 
@@ -282,7 +282,7 @@ export default function ExperiencePage() {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Calendar className="w-8 h-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">4+ Years</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">2+ Years</h3>
               <p className="text-gray-600">Professional Experience</p>
             </motion.div>
 
