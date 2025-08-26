@@ -10,7 +10,7 @@ export const publications: Publication[] = [
     year: 2024,
     url: "https://ieeexplore.ieee.org/document/11104099",
     status: "Published & available in IEEE Xplore",
-    indexing: ["Scopus", "Web of Science"],
+    indexing: ["Scopus"],
     impact: "Impact Factor: 3.9"
   },
   {
@@ -21,7 +21,7 @@ export const publications: Publication[] = [
     year: 2024,
     url: "https://www.computingonline.net/computing/article/view/3441",
     status: "Published",
-    indexing: ["Scopus", "Web of Science"]
+    indexing: ["Scopus"]
   },
   {
     id: "J.3",
