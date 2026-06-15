@@ -8,7 +8,7 @@ export const education: Education[] = [
     location: "Malacca, Malaysia",
     duration: "2024 - Present",
     current: true,
-    thesis: "Secure Data Sharing: Innovations in Hybrid Machine Learning and Cryptography",
+    thesis: "Hybrid Privacy-Preserving Federated Learning Framework with Homomorphic Encryption for Secure Data Sharing",
     honors: ["High Achiever Research Scholarship"]
   },
   {

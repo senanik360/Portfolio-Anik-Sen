@@ -3,11 +3,22 @@ import { Experience } from '@/types';
 export const experiences: Experience[] = [
   {
     id: "1",
+    title: "Visiting Research Trainee (NSTC, IIPP) ",
+    company: "ISS-NET Lab, National Cheng Kung University (NCKU)",
+    location: "Taiwan.",
+    duration: "05/2024 - 05/2026",
+    current: true,
+    description: [
+      "Serving as the project lead and assisting undergraduate students.",
+      "Contributing to ongoing lab projects related to Machine Learning (ML) and Federated Learning (FL).",
+    ]
+  },{
+    id: "2",
     title: "Graduate Research Assistant",
     company: "Multimedia University",
     location: "Melaka, Malaysia",
-    duration: "05/2024 - Current",
-    current: true,
+    duration: "05/2024 - 05/2026",
+    current: false,
     description: [
       "Conducting research on privacy-preserving machine learning to secure data sharing in Federated Learning settings",
       "Integrating cryptographic techniques, including Homomorphic Encryption, to enhance data privacy",
@@ -21,7 +32,7 @@ export const experiences: Experience[] = [
     ]
   },
   {
-    id: "2",
+    id: "3",
     title: "Computer Science Teacher",
     company: "Canadian Trillinium International School",
     location: "Bangladesh",
@@ -34,7 +45,7 @@ export const experiences: Experience[] = [
     ]
   },
   {
-    id: "3",
+    id: "4",
     title: "Research Assistant",
     company: "AIRIL (Artificial Intelligence Research and Innovation Lab)",
     location: "Bangladesh",
@@ -47,7 +58,7 @@ export const experiences: Experience[] = [
     ]
   },
   {
-    id: "4",
+    id: "5",
     title: "Cloud Computing Trainee",
     company: "Tech Company",
     location: "Bangladesh",
@@ -60,7 +71,7 @@ export const experiences: Experience[] = [
     ]
   },
   {
-    id: "5",
+    id: "6",
     title: "QA Functional Testing Intern",
     company: "Software Company",
     location: "Bangladesh",

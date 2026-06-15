@@ -34,6 +34,9 @@ export default function Footer() {
                 <Phone className="w-5 h-5 text-blue-400" />
                 <div className="space-y-1">
                   <div className="text-sm">
+                    <span className="text-gray-400">Taiwan:</span> {personalInfo.phones.taiwan}
+                  </div>
+                  <div className="text-sm">
                     <span className="text-gray-400">Malaysia:</span> {personalInfo.phones.malaysia}
                   </div>
                   <div className="text-sm">

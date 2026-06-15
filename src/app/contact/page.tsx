@@ -100,6 +100,15 @@ export default function ContactPage() {
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
                     <div className="space-y-1">
                       <div>
+                        <span className="text-sm text-gray-600">Taiwan:</span>
+                        <a
+                          href={`tel:${personalInfo.phones.taiwan}`}
+                          className="ml-2 text-gray-900 hover:text-blue-600 transition-colors duration-200"
+                        >
+                          {personalInfo.phones.taiwan}
+                        </a>
+                      </div>
+                      <div>
                         <span className="text-sm text-gray-600">Malaysia:</span>
                         <a
                           href={`tel:${personalInfo.phones.malaysia}`}

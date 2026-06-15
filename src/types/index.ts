@@ -4,6 +4,7 @@ export interface PersonalInfo {
   title: string;
   email: string;
   phones: {
+    taiwan: string;
     malaysia: string;
     bangladesh: string;
   };
