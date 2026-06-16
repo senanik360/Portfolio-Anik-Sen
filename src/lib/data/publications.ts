@@ -16,6 +16,16 @@ export const publications: Publication[] = [
   {
     id: "J.2",
     type: "journal",
+    title: "BiLSTM-LIME: Integrating NLP and Advanced Machine Learning Models for Fake News Detection  literature review",
+    venue: "Discover Artificial Intelligence, Springer Nature",
+    year: 2026,
+    url: "https://www.doi.org/10.1007/s44163-026-00852-w",
+    status: "Published",
+    indexing: ["Scopus"]
+  },
+  {
+    id: "J.3",
+    type: "journal",
     title: "Preventing Student's Mental Health Problems with the Help of Data Mining",
     venue: "International Journal of Computing",
     year: 2024,
@@ -24,7 +34,7 @@ export const publications: Publication[] = [
     indexing: ["Scopus"]
   },
   {
-    id: "J.3",
+    id: "J.4",
     type: "journal",
     title: "A Comprehensive Analysis of Machine Learning Approaches for Fake News Detection and Its Effects",
     venue: "Turkish Journal of Computer and Mathematics Education",
@@ -34,7 +44,7 @@ export const publications: Publication[] = [
     indexing: ["Scopus"]
   },
   {
-    id: "J.4",
+    id: "J.5",
     type: "journal",
     title: "Find out the innovative techniques of data sharing using cryptography by systematic literature review",
     venue: "Turkish Journal of Computer and Mathematics Education",
@@ -48,6 +58,16 @@ export const publications: Publication[] = [
   {
     id: "C.1",
     type: "conference",
+    title: "Preserving Federated Learning for MRI-Based Brain Tumour Detection Using Xception CNN",
+    venue: "IEEE International Conference",
+    year: 2026,
+    url: "https://ieeexplore.ieee.org/document/11498205",
+    status: "Published & available in IEEE Xplore",
+    indexing: ["Scopus"]
+  },
+  {
+    id: "C.2",
+    type: "conference",
     title: "Towards Precision Public Health: Advancing Obesity Prediction with Machine Learning Algorithms",
     venue: "IEEE International Conference",
     year: 2025,
@@ -56,7 +76,7 @@ export const publications: Publication[] = [
     indexing: ["Scopus"]
   },
   {
-    id: "C.2",
+    id: "C.3",
     type: "conference",
     title: "From Data to Diagnosis: Applying Machine Learning Model for Reliable Heart Disease Prediction",
     venue: "IEEE International Conference",
@@ -66,7 +86,7 @@ export const publications: Publication[] = [
     indexing: ["Scopus"]
   },
   {
-    id: "C.3",
+    id: "C.4",
     type: "conference",
     title: "Identification of Human Movement Through a Novel Machine Learning Approach",
     venue: "IEEE International Conference",
@@ -76,7 +96,7 @@ export const publications: Publication[] = [
     indexing: ["Scopus"]
   },
   {
-    id: "C.4",
+    id: "C.5",
     type: "conference",
     title: "Efficient American Sign Language Recognition Using Resnet-50",
     venue: "IEEE International Conference",
@@ -85,37 +105,42 @@ export const publications: Publication[] = [
     status: "Published & available in IEEE Xplore",
     indexing: ["Scopus"]
   },
+  {
+    id: "C.6",
+    type: "conference",
+    title: "Fake News Detection: An Introduction of Hybrid Machine Learning Model Outperforming Conventional Classifiers",
+    venue: "AIP Proceedings",
+    year: 2025,
+    url: "https://doi.org/10.1063/5.0312874",
+    status: "Published",
+    indexing: ["Scopus, WoS"]
+  },
+  {
+    id: "C.7",
+    type: "conference",
+    title: "Fusion of Machine Learning Techniques for Robust Anomaly Detection in Cybersecurity During Data Sharing",
+    venue: "AIP Proceedings",
+    year: 2025,
+    url: "https://doi.org/10.1063/5.0312873",
+    status: "Published",
+    indexing: ["Scopus, WoS"]
+  },
+  {
+    id: "C.8",
+    type: "conference",
+    title: "Enhancing DDoS Attack Detection Through Hybrid Ensemble Machine Learning Technique and Explainable AI",
+    venue: "Lecture Notes in Electrical Engineering",
+    year: 2025,
+    url: "https://doi.org/10.1007/978-981-95-0887-7_3",
+    status: "Published",
+    indexing: ["Scopus, Q4"]
+  },
+
+  
 
   // Under Publication
   {
     id: "U.1",
-    type: "under-publication",
-    title: "Fake News Detection: An Introduction of Hybrid Machine Learning Model Outperforming Conventional Classifiers",
-    venue: "5th International Conference on Mathematics, Engineering & Industrial Applications (ICoMEIA)",
-    year: 2025,
-    status: "Under Publication",
-    indexing: ["Scopus, WoS"]
-  },
-  {
-    id: "U.2",
-    type: "under-publication",
-    title: "Fusion of Machine Learning Techniques for Robust Anomaly Detection in Cybersecurity During Data Sharing",
-    venue: "5th International Conference on Mathematics, Engineering & Industrial Applications (ICoMEIA)",
-    year: 2025,
-    status: "Under Publication",
-    indexing: ["Scopus, WoS"]
-  },
-  {
-    id: "U.3",
-    type: "under-publication",
-    title: "Enhancing DDoS Attack Detection Through Hybrid Ensemble Machine Learning Technique and Explainable AI",
-    venue: "The 9th International Conference on Innovation in Artificial Intelligence (ICIAI 2025)",
-    year: 2025,
-    status: "Under Publication",
-    indexing: ["Scopus"]
-  },
-  {
-    id: "U.4",
     type: "under-publication",
     title: "A Privacy-Preserving Approach to Diabetes Diagnosis Using Artificial Neural Networks and Federated Learning Integrating Homomorphic Encryption",
     venue: "The 5th International Conference on Computer, Information Technology and Intelligent Computing (CITIC 2025)",
@@ -124,7 +149,7 @@ export const publications: Publication[] = [
     indexing: ["Scopus"]
   },
   {
-    id: "U.5",
+    id: "U.2",
     type: "under-publication",
     title: "Rust Implementation Suite for k-Resilient ID-Based Cryptosystem",
     venue: "The 5th International Conference on Computer, Information Technology and Intelligent Computing (CITIC 2025)",

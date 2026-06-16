@@ -341,6 +341,24 @@ export default function ContactPage() {
               className="bg-gray-50 rounded-lg p-6"
             >
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Prof. Ts. Dr. Tan Shing Chiang
+              </h3>
+              <p className="text-gray-600 mb-3">Professor, Faculty of Information Science and Technology</p>
+              <p className="text-gray-700 mb-3">Multimedia University, Malaysia</p>
+              <a
+                href="mailto:sctan@mmu.edu.my"
+                className="text-blue-600 hover:text-blue-700 transition-colors duration-200"
+              >
+                sctan@mmu.edu.my
+              </a>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-gray-50 rounded-lg p-6"
+            >
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Mr. Tanvir Ahmed
               </h3>
               <p className="text-gray-600 mb-3">Assistant Professor, Faculty of Science and Technology</p>
@@ -352,24 +370,7 @@ export default function ContactPage() {
                 tanvir.ahmed@aiub.edu
               </a>
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-gray-50 rounded-lg p-6"
-            >
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Prof. Ts. Dr. Tan Shing Chiang
-              </h3>
-              <p className="text-gray-600 mb-3">Professor, Faculty of Information Science and Technology</p>
-              <p className="text-gray-700 mb-3">American International University-Bangladesh</p>
-              <a
-                href="mailto:sctan@mmu.edu.my"
-                className="text-blue-600 hover:text-blue-700 transition-colors duration-200"
-              >
-                sctan@mmu.edu.my
-              </a>
-            </motion.div>
+            
             
           </div>
         </div>

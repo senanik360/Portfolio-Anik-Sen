@@ -119,5 +119,15 @@ export const awards: Award[] = [
     description: "Based on academic results. Awarded till last semester for consistent academic performance",
     category: "academic",
     certificate: "aiub-academic-scholarship-2023"
+  },
+
+  {
+    id: "14",
+    title: "Champion of the Three-Minute Thesis (3MT) competition 2026 (Master Level )",
+    organization: "",
+    year: 2026,
+    description: "",
+    category: "competition",
+    certificate: "inventx-gold-2024"
   }
 ];

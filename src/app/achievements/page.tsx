@@ -182,6 +182,16 @@ export default function AchievementsPage() {
         "/Duet Tech Fest/Duet Techfest_3.jpg"
     ];
 
+    // DUET TechFest 2023 images
+    const threeminImages = [
+        "/3MT/1.jpg",
+        "/3MT/2.jpg",
+        "/3MT/3.jpg",
+        "/3MT/4.jpg",
+        "/3MT/5.jpg",
+        "/3MT/6.jpg"
+    ];
+
     // Infineon-MMU 2025 image
     const infineon2025Image = "/1st Runner-Up in Infineon-MMU Innovative Research Poster Competition 2025 (IT-Category).png";
 
