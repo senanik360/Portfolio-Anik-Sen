@@ -2,7 +2,7 @@ import { PersonalInfo, HeroStats } from '@/types';
 
 export const personalInfo: PersonalInfo = {
   name: "Anik Sen",
-  title: "Currently working as Visiting Research Trainee (IIPP, NSTC) at the ISS-NET Lab, National Cheng Kung University (NCKU), Taiwan.",
+  title: "Currently working as a Visiting Research Trainee (IIPP, NSTC) at the ISS-NET Lab, National Cheng Kung University (NCKU), Taiwan.",
   profileImage: "/ANIK SEN.jpg",
   email: "aniksen360@gmail.com",
   phones: {

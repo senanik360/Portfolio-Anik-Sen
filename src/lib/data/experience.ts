@@ -6,7 +6,7 @@ export const experiences: Experience[] = [
     title: "Visiting Research Trainee (NSTC, IIPP) ",
     company: "ISS-NET Lab, National Cheng Kung University (NCKU)",
     location: "Taiwan.",
-    duration: "05/2024 - 05/2026",
+    duration: "06/2026 – Current",
     current: true,
     description: [
       "Serving as the project lead and assisting undergraduate students.",
