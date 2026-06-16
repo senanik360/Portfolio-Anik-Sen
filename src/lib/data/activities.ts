@@ -2,6 +2,14 @@ import { Activity } from '@/types';
 
 export const activities: Activity[] = [
   {
+    id: "17",
+    title: "2026 International Conference on Advances in Artificial Intelligence and Machine Learning (AAIML 2026)",
+    organization: "Tokyo, Japan",
+    year: 2026,
+    type: "conference",
+    description: "Presenter at the 2026 International Conference on Advances in Artificial Intelligence and Machine Learning",
+    certificate: "AAIML 2026"
+  },{
     id: "1",
     title: "The 5th International Conference on Computer, Information Technology and Intelligent Computing (CITIC 2025)",
     organization: "Cyberjaya, Malaysia",
@@ -144,15 +152,6 @@ export const activities: Activity[] = [
     type: "training",
     description: "Successfully achieved the student level credential by completing the IT Essentials course",
     certificate: "cisco-it-essentials-2022"
-  },
-  {
-    id: "17",
-    title: "2026 International Conference on Advances in Artificial Intelligence and Machine Learning (AAIML 2026)",
-    organization: "Tokyo, Japan",
-    year: 2026,
-    type: "conference",
-    description: "Presenter at the 2026 International Conference on Advances in Artificial Intelligence and Machine Learning",
-    certificate: "AAIML 2026"
   },
   {
     id: "18",

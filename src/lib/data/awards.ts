@@ -2,6 +2,15 @@ import { Award } from '@/types';
 
 export const awards: Award[] = [
   {
+    id: "14",
+    title: "Champion - Three Minute Thesis (3MT) Competition 2026 [Master Level]",
+    organization: "",
+    year: 2026,
+    description: "It was a great honor to be crowned champion, beating out some amazing researchers and competitors.",
+    category: "competition",
+    certificate: "inventx-gold-2024"
+  },
+  {
     id: "1",
     title: "Gold Award (two) - iNVENTX International Innovation Exhibition 2025",
     organization: "Multimedia University",
@@ -21,7 +30,7 @@ export const awards: Award[] = [
   },
   {
     id: "3",
-    title: "Finalist - 3-Minute Thesis (3MT) Competition 2025 (Master Level - MMU)",
+    title: "Finalist - Three Minute Thesis (3MT) Competition 2025 [Master Level]",
     organization: "Multimedia University",
     year: 2025,
     description: "Selected as finalist in the Three Minute Thesis competition at master level for research presentation",
@@ -119,15 +128,7 @@ export const awards: Award[] = [
     description: "Based on academic results. Awarded till last semester for consistent academic performance",
     category: "academic",
     certificate: "aiub-academic-scholarship-2023"
-  },
-
-  {
-    id: "14",
-    title: "Champion of the Three-Minute Thesis (3MT) competition 2026 (Master Level )",
-    organization: "",
-    year: 2026,
-    description: "",
-    category: "competition",
-    certificate: "inventx-gold-2024"
   }
+
+  
 ];

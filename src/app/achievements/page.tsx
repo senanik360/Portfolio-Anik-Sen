@@ -147,7 +147,7 @@ export default function AchievementsPage() {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [currentImageSet, setCurrentImageSet] = useState<'inventx2024' | 'inventx2025' | 'duet2023' | 'infineon2025' | 'orbitax2023' | 'threemt2025' | 'cuet2023'>('inventx2024');
+    const [currentImageSet, setCurrentImageSet] = useState<'3MT26' | 'inventx2024' | 'inventx2025' | 'duet2023' | 'infineon2025' | 'orbitax2023' | 'threemt2025' | 'cuet2023'>('3MT26');
 
     useEffect(() => {
         setIsClient(true);
@@ -161,6 +161,14 @@ export default function AchievementsPage() {
         "/iNVENTX 2024/iNVENTX GOLD AWARD CERTIFICATE - ANIK SEN.jpg",
         "/iNVENTX 2024/iNVENTX Gold Award.jpg",
         "/iNVENTX 2024/Lab Mates.jpg"
+    ];
+    // 3MT 2k26 images
+    const ThreeMT26Images = [
+        "/3MT/1.jpg",
+        "/3MT/2.jpg",
+        "/3MT/3.jpg",
+        "/3MT/4.jpg",
+        "/3MT/5.jpg"
     ];
 
     // iNVENTX 2025 images
@@ -182,14 +190,15 @@ export default function AchievementsPage() {
         "/Duet Tech Fest/Duet Techfest_3.jpg"
     ];
 
-    // DUET TechFest 2023 images
+    //3 MT 2026 images
     const threeminImages = [
         "/3MT/1.jpg",
         "/3MT/2.jpg",
         "/3MT/3.jpg",
         "/3MT/4.jpg",
         "/3MT/5.jpg",
-        "/3MT/6.jpg"
+        "/3MT/6.jpg",
+        "/3MT/C.jpg",
     ];
 
     // Infineon-MMU 2025 image
@@ -204,7 +213,7 @@ export default function AchievementsPage() {
     // National Research Fair CUET 2023 image
     const cuetResearchFair2023Image = "/National Research Fair CUET.jpg";
 
-    const openImageModal = (imagePath: string, initialIndex: number = 0, imageSet: 'inventx2024' | 'inventx2025' | 'duet2023' | 'infineon2025' | 'orbitax2023' | 'threemt2025' | 'cuet2023' = 'inventx2024') => {
+    const openImageModal = (imagePath: string, initialIndex: number = 0, imageSet: '3MT26' | 'inventx2024' | 'inventx2025' | 'duet2023' | 'infineon2025' | 'orbitax2023' | 'threemt2025' | 'cuet2023' = '3MT26') => {
         setSelectedImage(imagePath);
         setCurrentImageIndex(initialIndex);
         setCurrentImageSet(imageSet);
@@ -220,6 +229,8 @@ export default function AchievementsPage() {
 
     const getCurrentImages = () => {
         switch (currentImageSet) {
+            case '3MT26':
+                return ThreeMT26Images;
             case 'inventx2024':
                 return inventx2024Images;
             case 'inventx2025':
@@ -235,12 +246,14 @@ export default function AchievementsPage() {
             case 'cuet2023':
                 return [cuetResearchFair2023Image];
             default:
-                return inventx2024Images;
+                return ThreeMT26Images;
         }
     };
 
     const getCurrentImageSetInfo = () => {
         switch (currentImageSet) {
+            case '3MT26':
+                return { title: '3MT Competition', description: 'Three Minute Thesis (3MT) Competition 2026' };
             case 'inventx2024':
                 return { title: 'iNVENTX 2024 Gold Award', description: 'International Innovation Exhibition Achievement' };
             case 'inventx2025':
@@ -425,6 +438,17 @@ export default function AchievementsPage() {
                                     {achievement.description}
                                 </p>
 
+                                {/* 3MT 2026 - Auto Slideshow */}
+                                {achievement.title === "Champion - Three Minute Thesis (3MT) Competition 2026 [Master Level]" && (
+                                    <AchievementSlideshow
+                                        images={ThreeMT26Images}
+                                        onImageClick={(imagePath, index) => openImageModal(imagePath, index, '3MT26')}
+                                        title="3MT Competition"
+                                        description="(Master Level)"
+                                    />
+                                )}
+
+
                                 {/* iNVENTX 2024 Images - Auto Slideshow */}
                                 {achievement.title === "Gold Award - iNVENTX International Innovation Exhibition 2024" && (
                                     <AchievementSlideshow
@@ -476,7 +500,7 @@ export default function AchievementsPage() {
                                 )}
 
                                 {/* 3-Minute Thesis Competition 2025 Single Image */}
-                                {achievement.title === "Finalist - 3-Minute Thesis (3MT) Competition 2025 (Master Level - MMU)" && (
+                                {achievement.title === "Finalist - Three Minute Thesis (3MT) Competition 2025 [Master Level]" && (
                                     <SingleAchievementImage
                                         imagePath={threeMT2025Image}
                                         onImageClick={(imagePath) => openSingleImageModal(imagePath, 'threemt2025')}
