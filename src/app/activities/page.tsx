@@ -148,13 +148,25 @@ export default function ActivitiesPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentImageSet, setCurrentImageSet] = useState<'citic2025' | 'iaict2025' | 'iciai2025' | 'iceast2025' | 'acie2025' | 'icomeia2024' | 'jointcollaboration' | 'authorworkshop' | 'cnnworkshop' | 'mistleetcon' | 'phplaravel' | 'employabilityskills' | 'englishcommunication' | 'cybersecurity' | 'cisco'>('citic2025');
+  const [currentImageSet, setCurrentImageSet] = useState<'aaiml26' | 'citic2025' | 'iaict2025' | 'iciai2025' | 'iceast2025' | 'acie2025' | 'icomeia2024' | 'jointcollaboration' | 'authorworkshop' | 'cnnworkshop' | 'mistleetcon' | 'phplaravel' | 'employabilityskills' | 'englishcommunication' | 'cybersecurity' | 'cisco'>('aaiml26');
 
   useEffect(() => {
     setIsClient(true);
   }, []);
 
+  
+
   // Conference images
+
+  // 2026 International Conference on Advances in Artificial Intelligence and Machine Learning (AAIML 2026)
+
+  const aaiml26Images = [
+    "/AAIML/1.jpg",
+    "/AAIML/2.jpg",
+    "/AAIML/3.jpg",
+    "/AAIML/4.jpg"
+  ];
+
   const citic2025Images = [
     "/International Conferences/CITIC Cyberjaya.jpeg",
     "/International Conferences/CITIC Cyberjaya 2.jpg"
@@ -188,6 +200,9 @@ export default function ActivitiesPage() {
     "/Workshop Seminar/MIST LeetCon.jpg",
     "/Workshop Seminar/MIST LeetCon_2.jpg"
   ];
+  
+
+  const mecon26lImage = "/MECON/1.jpg";
 
   const phpLaravelImage = "/Workshop Seminar/Laravel Training Certificate.jpg";
   const employabilitySkillsImage = "/Workshop Seminar/Wadhwani Certificate.png";
@@ -195,14 +210,14 @@ export default function ActivitiesPage() {
   const cyberSecurityImage = "/Workshop Seminar/Cyber Security WorkshppCertificate_ANIK SEN.png";
   const ciscoImage = "/Workshop Seminar/Cisco.jpg";
 
-  const openImageModal = (imagePath: string, initialIndex: number = 0, imageSet: 'citic2025' | 'iaict2025' | 'iciai2025' | 'iceast2025' | 'acie2025' | 'icomeia2024' | 'mistleetcon' = 'citic2025') => {
+  const openImageModal = (imagePath: string, initialIndex: number = 0, imageSet: 'aaiml26' | 'citic2025' | 'iaict2025' | 'iciai2025' | 'iceast2025' | 'acie2025' | 'icomeia2024' | 'mistleetcon' = 'aaiml26') => {
     setSelectedImage(imagePath);
     setCurrentImageIndex(initialIndex);
     setCurrentImageSet(imageSet);
     setIsModalOpen(true);
   };
 
-  const openSingleImageModal = (imagePath: string, imageSet: 'iaict2025' | 'iceast2025' | 'jointcollaboration' | 'authorworkshop' | 'cnnworkshop' | 'phplaravel' | 'employabilityskills' | 'englishcommunication' | 'cybersecurity' | 'cisco' = 'iaict2025') => {
+  const openSingleImageModal = (imagePath: string, imageSet: 'mecon26' | 'iaict2025' | 'iceast2025' | 'jointcollaboration' | 'authorworkshop' | 'cnnworkshop' | 'phplaravel' | 'employabilityskills' | 'englishcommunication' | 'cybersecurity' | 'cisco' = 'mecon26') => {
     setSelectedImage(imagePath);
     setCurrentImageIndex(0);
     setCurrentImageSet(imageSet);
@@ -211,6 +226,10 @@ export default function ActivitiesPage() {
 
   const getCurrentImages = () => {
     switch (currentImageSet) {
+      case 'aaiml26':
+        return aaiml26Images;
+        case 'mecon26':
+        return mecon26lImage;
       case 'citic2025':
         return citic2025Images;
       case 'iaict2025':
@@ -241,13 +260,18 @@ export default function ActivitiesPage() {
         return [cyberSecurityImage];
       case 'cisco':
         return [ciscoImage];
+
       default:
-        return citic2025Images;
+        return aaiml26Images;
     }
   };
 
   const getCurrentImageSetInfo = () => {
     switch (currentImageSet) {
+      case 'aaiml26':
+        return { title: 'AAIML 2026 Conference', description: 'Advances in Artificial Intelligence and Machine Learning' };
+      case 'mecon26':
+        return { title: 'MECON 2026 Conference', description: 'Engineering Conference' };
       case 'citic2025':
         return { title: 'CITIC 2025 Conference', description: 'Computer, Information Technology and Intelligent Computing' };
       case 'iaict2025':
@@ -503,6 +527,17 @@ export default function ActivitiesPage() {
                   {activity.description}
                 </p>
 
+                {/* AAIML 2026 Images - Slideshow */}
+                {activity.title === "2026 International Conference on Advances in Artificial Intelligence and Machine Learning (AAIML 2026)" && (
+                  <ActivitySlideshow
+                    images={aaiml26Images}
+                    onImageClick={(imagePath, index) => openImageModal(imagePath, index, 'aaiml26')}
+                    title="AAIML 2026 Conference"
+                    description="Computer, Information Technology and Intelligent Computing"
+                  />
+                )}
+                
+
                 {/* CITIC 2025 Images - Slideshow */}
                 {activity.title === "The 5th International Conference on Computer, Information Technology and Intelligent Computing (CITIC 2025)" && (
                   <ActivitySlideshow
@@ -542,6 +577,17 @@ export default function ActivitiesPage() {
                     description="Engineering, Applied Sciences and Technology"
                   />
                 )}
+
+                 {/* MECON 2026 Single Image */}
+                {activity.title === "The Multimedia University Engineering Conference 2026 (MECON 2026)" && (
+                  <SingleActivityImage
+                    imagePath={mecon26lImage}
+                    onImageClick={(imagePath) => openSingleImageModal(imagePath, 'mecon26')}
+                    title="ICEAST 2025 Conference"
+                    description="Engineering Conference"
+                  />
+                )}
+                
 
                 {/* ACIE 2025 Images - Slideshow */}
                 {activity.title === "The 5th Asian Conference on Information Engineering (ACIE 2025)" && (

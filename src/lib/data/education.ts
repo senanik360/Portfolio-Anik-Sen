@@ -9,7 +9,7 @@ export const education: Education[] = [
     duration: "2024 - Present",
     current: true,
     thesis: "Hybrid Privacy-Preserving Federated Learning Framework with Homomorphic Encryption for Secure Data Sharing",
-    honors: ["High Achiever Research Scholarship"]
+    honors: ["Achiever Research Scholarship"]
   },
   {
     id: "2",
@@ -23,7 +23,7 @@ export const education: Education[] = [
     honors: [
       "Magna Cum Laude",
       "Dean's List Honor (5 consecutive times)",
-      "High Achiever Scholarship"
+      "Academic Scholarship"
     ]
   },
   {

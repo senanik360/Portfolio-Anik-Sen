@@ -28,7 +28,7 @@ export const experiences: Experience[] = [
     achievements: [
       "Published 8+ research papers in international journals and conferences",
       "Presented research findings at 6+ international conferences",
-      "Received High Achiever Research Scholarship for academic excellence"
+      "Received Achiever Research Scholarship for academic excellence"
     ]
   },
   {
@@ -60,9 +60,9 @@ export const experiences: Experience[] = [
   {
     id: "5",
     title: "Cloud Computing Trainee",
-    company: "Tech Company",
+    company: "eTech Solution Ltd.",
     location: "Bangladesh",
-    duration: "2023 - 2024",
+    duration: "June 2023 - August 2023",
     current: false,
     description: [
       "Learned cloud computing technologies and deployment strategies",
@@ -73,7 +73,7 @@ export const experiences: Experience[] = [
   {
     id: "6",
     title: "QA Functional Testing Intern",
-    company: "Software Company",
+    company: "a1qa",
     location: "Bangladesh",
     duration: "2022 - 2023",
     current: false,

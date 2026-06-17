@@ -19,6 +19,15 @@ export const activities: Activity[] = [
     certificate: "citic-2025"
   },
   {
+    id: "3",
+    title: "The 9th International Conference on Innovation in Artificial Intelligence (ICIAI 2025)",
+    organization: "NTU, Singapore",
+    year: 2025,
+    type: "conference",
+    description: "Presenter at international conference on innovation in artificial intelligence",
+    certificate: "iciai-2025"
+  },
+  {
     id: "2",
     title: "The 2025 IEEE International Conference on Industry 4.0, Artificial Intelligence, and Communications Technology (IAICT'2025)",
     organization: "Bali, Indonesia",
@@ -28,13 +37,22 @@ export const activities: Activity[] = [
     certificate: "iaict-2025"
   },
   {
-    id: "3",
-    title: "The 9th International Conference on Innovation in Artificial Intelligence (ICIAI 2025)",
-    organization: "Singapore",
-    year: 2025,
+    id: "6",
+    title: "5th International Conference on Mathematics, Engineering & Industrial Applications (ICoMEIA)",
+    organization: "Langkawi, Malaysia",
+    year: 2024,
     type: "conference",
-    description: "Presenter at international conference on innovation in artificial intelligence",
-    certificate: "iciai-2025"
+    description: "Presenter at international conference on mathematics, engineering and industrial applications",
+    certificate: "icomeia-2024"
+  },
+  {
+    id: "18",
+    title: "The Multimedia University Engineering Conference 2026 (MECON 2026)",
+    organization: "Cyberjaya, Malaysia",
+    year: 2026,
+    type: "conference",
+    description: "Presenter at The Multimedia University Engineering Conference 2026",
+    certificate: "MECON 2026"
   },
   {
     id: "4",
@@ -54,15 +72,7 @@ export const activities: Activity[] = [
     description: "Presenter at Asian conference on information engineering",
     certificate: "acie-2025"
   },
-  {
-    id: "6",
-    title: "5th International Conference on Mathematics, Engineering & Industrial Applications (ICoMEIA)",
-    organization: "Langkawi, Malaysia",
-    year: 2024,
-    type: "conference",
-    description: "Presenter at international conference on mathematics, engineering and industrial applications",
-    certificate: "icomeia-2024"
-  },
+  
   {
     id: "7",
     title: "International Joint Collaborative Engagement Session",
@@ -152,14 +162,6 @@ export const activities: Activity[] = [
     type: "training",
     description: "Successfully achieved the student level credential by completing the IT Essentials course",
     certificate: "cisco-it-essentials-2022"
-  },
-  {
-    id: "18",
-    title: "The Multimedia University Engineering Conference 2026 (MECON 2026), ",
-    organization: "Cyberjaya, Malaysia",
-    year: 2026,
-    type: "conference",
-    description: "Presenter at The Multimedia University Engineering Conference 2026",
-    certificate: "MECON 2026"
   }
+  
 ];
