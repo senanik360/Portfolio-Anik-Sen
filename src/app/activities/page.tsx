@@ -148,7 +148,7 @@ export default function ActivitiesPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentImageSet, setCurrentImageSet] = useState<'aaiml26' | 'citic2025' | 'iaict2025' | 'iciai2025' | 'iceast2025' | 'acie2025' | 'icomeia2024' | 'jointcollaboration' | 'authorworkshop' | 'cnnworkshop' | 'mistleetcon' | 'phplaravel' | 'employabilityskills' | 'englishcommunication' | 'cybersecurity' | 'cisco'>('aaiml26');
+  const [currentImageSet, setCurrentImageSet] = useState<'aaiml26' | 'citic2025' | 'iaict2025' | 'iciai2025' | 'mecon26' | 'iceast2025' | 'acie2025' | 'icomeia2024' | 'jointcollaboration' | 'authorworkshop' | 'cnnworkshop' | 'mistleetcon' | 'phplaravel' | 'employabilityskills' | 'englishcommunication' | 'cybersecurity' | 'cisco'>('aaiml26');
 
   useEffect(() => {
     setIsClient(true);
